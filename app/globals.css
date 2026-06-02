@@ -16,9 +16,7 @@ body {
 }
 
 main {
-  padding: 96px 24px;
-  max-width: 680px;
-  margin: 0 auto;
+  padding: 0;
 }
 
 p {

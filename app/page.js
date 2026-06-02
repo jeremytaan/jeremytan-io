@@ -158,10 +158,10 @@ export default function Home() {
           <div style={{display:'flex', flexDirection:'column'}}>
             {[
               {emoji:'🏸', en:'Racquet Sports', sub:'Badminton · Tennis · Padel', zh:'运动'},
-              {emoji:'🥩', en:'Cantonese Food', sub:'Perfecting crispy pork · Siu Yuk · Char Siew', zh:'烧肉'},
+              {emoji:'🥩', en:'Cantonese Food', sub:'Perfecting Crispy Pork · Siu Yuk · Char Siu', zh:'烧肉'},
               {emoji:'🥊', en:'Muay Thai & BJJ', sub:'Ex-hobbyist · Still a UFC obsessive', zh:'武术'},
               {emoji:'🏃', en:'Chinatown Run Club', sub:'Where I met some of my best friends', zh:'跑步'},
-              {emoji:'🎙', en:'Late Night Hotpot', sub:'Co-founder · Podcast', zh:'深夜火锅'},
+              {emoji:'🎙', en:'Late Night Hotpot', sub:'Co-Founder · Podcast', zh:'深夜火锅'},
             ].map((item, i) => (
               <div key={i} style={{display:'flex', alignItems:'center', gap:20, padding:'20px 0', borderBottom:'1px solid #2C2825'}}>
                 <span style={{fontSize:22, width:36, flexShrink:0}}>{item.emoji}</span>
