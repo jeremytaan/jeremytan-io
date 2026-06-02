@@ -14,7 +14,7 @@ export default function Home() {
           <li><Link href="#journal" style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>Journal</Link></li>
           <li><Link href="#work" style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>Work</Link></li>
           <li><Link href="#about" style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>About</Link></li>
-          <li><Link href="#" style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#F0EDE8', background:'#E8342A', padding:'8px 18px', textDecoration:'none'}}>Follow along →</Link></li>
+          <li><Link href="https://www.linkedin.com/in/jeremytan42/" style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#F0EDE8', background:'#E8342A', padding:'8px 18px', textDecoration:'none'}}>Follow along →</Link></li>
         </ul>
       </nav>
 
@@ -185,9 +185,14 @@ export default function Home() {
           <p style={{fontFamily:'DM Mono, monospace', fontSize:10, color:'#7A7268', letterSpacing:'0.08em', marginTop:4}}>jeremytan.io · Sydney, Australia · 悉尼 · © 2026</p>
         </div>
         <div style={{display:'flex', gap:28}}>
-          {['LinkedIn','GitHub','Instagram','Email'].map(link => (
-            <a key={link} href="#" style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.12em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>{link}</a>
-          ))}
+{[
+  {label:'LinkedIn', url:'https://www.linkedin.com/in/jeremytan42/'},
+  {label:'GitHub', url:'https://github.com/jeremytaan'},
+  {label:'Instagram', url:'https://www.instagram.com/jeremytaan'},
+  {label:'Email', url:'mailto:jeremy.tan1@outlook.com'},
+].map(link => (
+  <a key={link.label} href={link.url} target="_blank" style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.12em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>{link.label}</a>
+))}
         </div>
       </footer>
 
