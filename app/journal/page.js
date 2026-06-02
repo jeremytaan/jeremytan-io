@@ -1,23 +1,39 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import Link from 'next/link'
 
-export default async function PostPage({ params }) {
-  const { slug } = await params
-  const filePath = path.join(process.cwd(), 'posts', `${slug}.mdx`)
-  const fileContents = fs.readFileSync(filePath, 'utf8')
-  const { content, data } = matter(fileContents)
-  const paragraphs = content.split(/\n\n+/).filter(p => p.trim())
+export default function JournalPage() {
+  const postsDir = path.join(process.cwd(), 'posts')
+  const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.mdx'))
+
+  const posts = files.map(filename => {
+    const slug = filename.replace('.mdx', '')
+    const fileContents = fs.readFileSync(path.join(postsDir, filename), 'utf8')
+    const { data } = matter(fileContents)
+    return { slug, ...data }
+  })
 
   return (
-    <main>
-      <p style={{ fontSize: '13px', color: '#7A7268' }}>{data.date}</p>
-      <h1 style={{ fontSize: '32px', fontWeight: '700', margin: '8px 0 40px' }}>{data.title}</h1>
-      <article>
-        {paragraphs.map((para, i) => (
-          <p key={i}>{para.trim()}</p>
+    <main style={{ background: '#111010', minHeight: '100vh', padding: '120px 24px 80px' }}>
+      <div style={{ maxWidth: '860px', margin: '0 auto' }}>
+        <p style={{ fontFamily: 'DM Mono, monospace', fontSize: '11px', color: '#E8342A', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '12px' }}>— Latest Writing</p>
+        <h1 style={{ fontSize: 'clamp(36px, 5vw, 56px)', fontWeight: '700', marginBottom: '80px' }}>Journal <span style={{ fontFamily: 'Noto Sans SC, sans-serif', fontWeight: '300', fontSize: '0.5em', color: '#7A7268' }}>日志</span></h1>
+
+        {posts.map(post => (
+          <div key={post.slug}>
+            <Link href={`/journal/${post.slug}`} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '32px 0' }}>
+              <div>
+                <p style={{ fontFamily: 'DM Mono, monospace', fontSize: '11px', color: '#666', marginBottom: '12px' }}>{post.slug}</p>
+                <h2 style={{ fontSize: '18px', fontWeight: '500', color: '#F0EDE8', marginBottom: '12px' }}>{post.title}</h2>
+                {post.tag && <span style={{ fontFamily: 'DM Mono, monospace', fontSize: '10px', color: '#E8342A', border: '1px solid #E8342A', padding: '3px 8px', letterSpacing: '0.08em' }}>{post.tag}</span>}
+              </div>
+              <p style={{ fontFamily: 'DM Mono, monospace', fontSize: '11px', color: '#666' }}>{post.date}</p>
+            </Link>
+            <hr style={{ border: 'none', borderTop: '1px solid #2C2C2C' }} />
+          </div>
         ))}
-      </article>
+      </div>
     </main>
   )
 }
