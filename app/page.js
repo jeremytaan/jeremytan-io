@@ -25,7 +25,7 @@ export default function Home() {
 
         <div style={{display:'flex', alignItems:'center', gap:12, marginBottom:24}}>
           <div style={{width:6, height:6, borderRadius:'50%', background:'#E8342A', flexShrink:0}} />
-          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.15em', textTransform:'uppercase', color:'#7A7268'}}>Sydney, Australia · Building in public · 悉尼</span>
+          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.15em', textTransform:'uppercase', color:'#7A7268', whiteSpace:'nowrap'}}>Sydney, Australia · Building in public · 悉尼</span>
         </div>
 
         <h1 style={{fontSize:'clamp(52px, 14vw, 140px)', fontWeight:700, lineHeight:0.92, letterSpacing:'-0.03em', color:'#F0EDE8', marginBottom:16, position:'relative', zIndex:2}}>
@@ -58,8 +58,8 @@ export default function Home() {
       {/* TICKER */}
       <div style={{overflow:'hidden', borderTop:'1px solid #2C2825', borderBottom:'1px solid #2C2825', background:'#181614'}}>
         <div style={{display:'flex', whiteSpace:'nowrap', animation:'ticker 28s linear infinite', padding:'14px 0'}}>
-          {['Product Designer · 产品设计师', 'FinTech Founder · 金融科技创始人', '两个世界 · Between Two Worlds', 'Building in Public · 公开建设', 'Chinatown Run Club · 唐人街跑步俱乐部', 'Sydney · 悉尼', 'Misfit · 异类',
-            'Product Designer · 产品设计师', 'FinTech Founder · 金融科技创始人', '两个世界 · Between Two Worlds', 'Building in Public · 公开建设', 'Chinatown Run Club · 唐人街跑步俱乐部', 'Sydney · 悉尼', 'Misfit · 异类'
+          {['Product Designer · 产品设计师', 'FinTech Founder · 金融科技创始人', '两个世界 · Between Two Worlds', 'Building in Public · 公开建设', 'Chinatown Run Club · 唐人街跑步俱乐部', 'Sydney\u00A0·\u00A0悉尼', 'Misfit · 异类',
+            'Product Designer · 产品设计师', 'FinTech Founder · 金融科技创始人', '两个世界 · Between Two Worlds', 'Building in Public · 公开建设', 'Chinatown Run Club · 唐人街跑步俱乐部', 'Sydney\u00A0·\u00A0悉尼', 'Misfit · 异类'
           ].map((item, i) => (
             <span key={i} style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, letterSpacing:'0.12em', color:'#7A7268', padding:'0 32px', flexShrink:0}}>{item}</span>
           ))}
@@ -147,7 +147,6 @@ export default function Home() {
             <h2 style={{fontSize:'clamp(32px, 6vw, 56px)', fontWeight:700, letterSpacing:'-0.03em', color:'#F0EDE8', lineHeight:1, margin:0}}>
               About <span style={{fontFamily:'Noto Sans SC, sans-serif', fontSize:'0.45em', fontWeight:300, color:'#7A7268', marginLeft:12, letterSpacing:'0.1em', verticalAlign:'middle'}}>关于我</span>
             </h2>
-
           </div>
         </div>
 
