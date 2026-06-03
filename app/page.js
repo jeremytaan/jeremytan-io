@@ -38,7 +38,7 @@ export default function Home() {
         <div className="hero-bottom" style={{display:'flex', alignItems:'flex-start', justifyContent:'space-between', position:'relative', zIndex:2, borderTop:'1px solid rgba(240,237,232,0.08)', paddingTop:32, gap:32, flexWrap:'wrap'}}>
           <p style={{fontSize:'clamp(14px, 2.5vw, 22px)', fontWeight:300, color:'rgba(240,237,232,0.5)', lineHeight:1.6, maxWidth:520, flex:'1 1 280px'}}>
             <strong style={{color:'#F0EDE8', fontWeight:500}}>Product Designer. FinTech Founder. Misfit.</strong><br/>
-            Australian Born Chinese navigating <span style={{fontFamily:'Noto Sans SC, sans-serif', color:'#E8342A', fontWeight:300, fontSize:'0.85em'}}>两个世界</span> — between two worlds. Building a $1B app, solo, with AI as my co-founder. No CS degree. No conventional path. Figuring it out anyway.
+            Australian Born Chinese navigating <span style={{fontFamily:'Noto Sans SC, sans-serif', color:'#E8342A', fontWeight:300, fontSize:'0.85em'}}>两个世界</span> — between two worlds. Building a $1B app, solo, with AI as my co-founder. No CS degree. Figuring it out anyway.
           </p>
           <div style={{display:'flex', flexDirection:'column', alignItems:'flex-end', gap:12, flexShrink:0}}>
             {[
