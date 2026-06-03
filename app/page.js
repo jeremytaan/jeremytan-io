@@ -147,20 +147,7 @@ export default function Home() {
             <h2 style={{fontSize:'clamp(32px, 6vw, 56px)', fontWeight:700, letterSpacing:'-0.03em', color:'#F0EDE8', lineHeight:1, margin:0}}>
               About <span style={{fontFamily:'Noto Sans SC, sans-serif', fontSize:'0.45em', fontWeight:300, color:'#7A7268', marginLeft:12, letterSpacing:'0.1em', verticalAlign:'middle'}}>关于我</span>
             </h2>
-            <img
-              src="/avatar.png"
-              alt="Jeremy Tan"
-              style={{
-                width:'160px',
-                objectFit:'contain',
-                objectPosition:'top',
-                marginBottom:'-8px',
-                maskImage:'linear-gradient(to bottom, black 40%, transparent 88%), linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)',
-                WebkitMaskImage:'linear-gradient(to bottom, black 40%, transparent 88%), linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)',
-                maskComposite:'intersect',
-                WebkitMaskComposite:'destination-in',
-              }}
-            />
+
           </div>
         </div>
 
