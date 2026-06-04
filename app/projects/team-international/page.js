@@ -80,7 +80,7 @@ export default function TeamInternationalPage() {
             {src:'/projects/team-international/results.png', cap:'03 — Final results · Podium with real scores', w:1534, h:768},
           ].map((img, i) => (
             <div key={i}>
-              <p style={{fontFamily:'DM Mono, monospace', fontSize:10, color:'#8888aa', letterSpacing:'0.08em', marginBottom:12}}>{img.cap}</p>
+              <p style={{fontFamily:'DM Mono, monospace', fontSize:12, color:'#8888aa', letterSpacing:'0.08em', marginBottom:12}}>{img.cap}</p>
               <div style={{position:'relative', width:'100%', overflow:'hidden'}}>
                 <Image src={img.src} alt={img.cap} width={img.w} height={img.h} style={{width:'100%', height:'auto', display:'block', maxWidth:'95%', margin:'0 auto'}} />
               </div>
