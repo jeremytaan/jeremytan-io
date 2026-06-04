@@ -12,6 +12,7 @@ export default function Home() {
         </Link>
         <ul style={{display:'flex', gap:20, listStyle:'none', alignItems:'center', flexWrap:'wrap', justifyContent:'flex-end'}}>
           <li className="nav-link-item"><Link href="#journal" style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>Journal</Link></li>
+          <li className="nav-link-item"><Link href="#projects" style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>Projects</Link></li>
           <li className="nav-link-item"><Link href="#work" style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>Work</Link></li>
           <li className="nav-link-item"><Link href="#about" style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>About</Link></li>
           <li><Link href="https://www.linkedin.com/in/jeremytan42/" style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#F0EDE8', background:'#E8342A', padding:'8px 14px', textDecoration:'none', whiteSpace:'nowrap'}}>Follow →</Link></li>
@@ -100,6 +101,33 @@ export default function Home() {
             </Link>
           ))}
         </div>
+      </section>
+
+
+      {/* PROJECTS */}
+      <section style={{padding:'80px 24px', borderTop:'1px solid #2C2825'}} id="projects">
+        <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-start', marginBottom:48, flexWrap:'wrap', gap:16}}>
+          <div>
+            <div style={{display:'flex', alignItems:'center', gap:12, marginBottom:12}}>
+              <div style={{width:24, height:1, background:'#E8342A'}} />
+              <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#E8342A'}}>Personal projects</span>
+            </div>
+            <h2 style={{fontSize:'clamp(32px, 6vw, 56px)', fontWeight:700, letterSpacing:'-0.03em', color:'#F0EDE8', lineHeight:1}}>
+              Projects <span style={{fontFamily:'Noto Sans SC, sans-serif', fontSize:'0.45em', fontWeight:300, color:'#7A7268', marginLeft:12, letterSpacing:'0.1em', verticalAlign:'middle'}}>作品</span>
+            </h2>
+          </div>
+          <Link href="/projects" style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.15em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none', marginTop:8}}>All projects →</Link>
+        </div>
+        <Link href="/projects/team-international" style={{textDecoration:'none', display:'grid', gridTemplateColumns:'40px 1fr', gap:16, padding:'28px 0', borderBottom:'1px solid #2C2825'}}>
+          <span style={{fontFamily:'DM Mono, monospace', fontSize:11, color:'#4A4540', paddingTop:3}}>01</span>
+          <div>
+            <p style={{fontSize:'clamp(15px, 2.5vw, 18px)', fontWeight:500, color:'#F0EDE8', lineHeight:1.3, marginBottom:8}}>Team International Turns 1 · Quiz Showdown</p>
+            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', flexWrap:'wrap', gap:8}}>
+              <span style={{fontFamily:'DM Mono, monospace', fontSize:9, letterSpacing:'0.12em', textTransform:'uppercase', color:'#7A7268', border:'1px solid #2C2825', padding:'3px 10px'}}>Web App · Firebase · Personal</span>
+              <span style={{fontFamily:'DM Mono, monospace', fontSize:10, color:'#7A7268'}}>2026</span>
+            </div>
+          </div>
+        </Link>
       </section>
 
       {/* WORK */}
