@@ -149,19 +149,18 @@ export default function TeamInternationalPage() {
         <p style={{fontSize:'clamp(15px, 2vw, 18px)', fontWeight:300, color:'rgba(255,255,255,0.6)', lineHeight:1.8, maxWidth:640, marginBottom:32}}>
           The app ran live without a hitch. All 11 players joined via QR code on the TV, competed across 24 questions and 4 rounds, and had a genuinely chaotic, competitive time. The personalisation — their own faces on the answer cards, questions written specifically about them — made it land in a way no off-the-shelf tool could have.
         </p>
-        <div style={{background:'#1e2235', border:'1px solid #2a2f4a', padding:'32px 24px'}}>
-          <p style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.12em', textTransform:'uppercase', color:'#8888aa', marginBottom:24}}>Final standings</p>
+        <div style={{background:'#0d0f1a', border:'1px solid rgba(245,200,66,0.5)', padding:'32px 24px'}}>
+          <p style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.12em', textTransform:'uppercase', color:'#f5c842', marginBottom:24}}>Final standings</p>
           <div className="podium" style={{display:'grid', gridTemplateColumns:'1fr 1.15fr 1fr', gap:1, background:'#2a2f4a', marginBottom:1}}>
             {[
-              {pos:'2', name:'Carol', pts:'27,404', bg:'#b0b8c1', textColor:'#1e2235', ptsColor:'#4a5568'},
-              {pos:'1', name:'Jarrod', pts:'29,048', bg:'#f5c842', textColor:'#0d0f1a', ptsColor:'#6b4f00', emoji:'🦊'},
-              {pos:'3', name:'Jeremy', pts:'27,339', bg:'#b87333', textColor:'#ffffff', ptsColor:'rgba(255,255,255,0.6)'},
+              {pos:'2', name:'Carol', pts:'27,404', numColor:'#b0b8c1'},
+              {pos:'1', name:'Jarrod', pts:'29,048', numColor:'#f5c842'},
+              {pos:'3', name:'Jeremy', pts:'27,339', numColor:'#b87333'},
             ].map((p, i) => (
-              <div key={i} style={{background:p.bg, padding:'24px 16px', textAlign:'center'}}>
-                {p.emoji && <div style={{fontSize:20, marginBottom:6}}>{p.emoji}</div>}
-                <div style={{fontSize:'clamp(28px, 5vw, 48px)', fontWeight:700, color:p.textColor, letterSpacing:'-0.03em', lineHeight:1, marginBottom:8}}>{p.pos}</div>
-                <div style={{fontSize:13, fontWeight:600, color:p.textColor, marginBottom:4}}>{p.name}</div>
-                <div style={{fontFamily:'DM Mono, monospace', fontSize:10, color:p.ptsColor}}>{p.pts} pts</div>
+              <div key={i} style={{background:'#0d0f1a', padding:'24px 16px', textAlign:'center'}}>
+                <div style={{fontSize:'clamp(28px, 5vw, 48px)', fontWeight:700, color:p.numColor, letterSpacing:'-0.03em', lineHeight:1, marginBottom:8}}>{p.pos}</div>
+                <div style={{fontSize:13, fontWeight:600, color:'#ffffff', marginBottom:4}}>{p.name}</div>
+                <div style={{fontFamily:'DM Mono, monospace', fontSize:10, color:'#8888aa'}}>{p.pts} pts</div>
               </div>
             ))}
           </div>
@@ -176,7 +175,7 @@ export default function TeamInternationalPage() {
               {r:'10', n:'Chonny', p:'19,526'},
               {r:'11', n:'Steph', p:'17,603'},
             ].map((p, i) => (
-              <div key={i} style={{background:'#1e2235', padding:'16px 12px'}}>
+              <div key={i} style={{background:'#0d0f1a', padding:'16px 12px'}}>
                 <div style={{fontFamily:'DM Mono, monospace', fontSize:10, color:'#8888aa', marginBottom:4}}>{p.r}</div>
                 <div style={{fontSize:12, fontWeight:500, color:'#ffffff', marginBottom:2}}>{p.n}</div>
                 <div style={{fontFamily:'DM Mono, monospace', fontSize:10, color:'#f5c842'}}>{p.p}</div>
