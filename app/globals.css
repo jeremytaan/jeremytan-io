@@ -23,3 +23,10 @@ p {
   margin-bottom: 24px;
   line-height: 1.8;
 }
+
+hr {
+  margin-top: 32px;
+  margin-bottom: 0;
+  border: none;
+  border-top: 1px solid rgba(240, 237, 232, 0.15);
+}

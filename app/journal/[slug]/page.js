@@ -73,8 +73,7 @@ const readingTime = Math.ceil(wordCount / 200)
           }}>{data.tag}</p>
         )}
 
-        <hr style={{ border: 'none', borderTop: '1px solid #2C2C2C', marginBottom: '56px' }} />
-
+<hr style={{ border: 'none', borderTop: '1px solid #2C2C2C', marginBottom: '16px' }} />
         {/* Content */}
         <div
           dangerouslySetInnerHTML={{ __html: htmlContent }}
