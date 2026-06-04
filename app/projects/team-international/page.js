@@ -81,8 +81,8 @@ export default function TeamInternationalPage() {
           ].map((img, i) => (
             <div key={i}>
               <p style={{fontFamily:'DM Mono, monospace', fontSize:10, color:'#8888aa', letterSpacing:'0.08em', marginBottom:12}}>{img.cap}</p>
-              <div style={{position:'relative', width:'100%', overflow:'hidden', border:'1px solid #1e2235'}}>
-                <Image src={img.src} alt={img.cap} width={img.w} height={img.h} style={{width:'100%', height:'auto', display:'block', maxWidth:'70%', margin:'0 auto'}} />
+              <div style={{position:'relative', width:'100%', overflow:'hidden'}}>
+                <Image src={img.src} alt={img.cap} width={img.w} height={img.h} style={{width:'100%', height:'auto', display:'block', maxWidth:'95%', margin:'0 auto'}} />
               </div>
             </div>
           ))}
