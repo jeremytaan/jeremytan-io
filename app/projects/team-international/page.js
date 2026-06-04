@@ -28,7 +28,7 @@ export default function TeamInternationalPage() {
           <span style={{color:'#f5c842'}}>Turns 1</span> · Quiz Showdown
         </h1>
         <p style={{fontSize:'clamp(14px, 2vw, 18px)', fontWeight:300, color:'rgba(255,255,255,0.5)', maxWidth:560, lineHeight:1.7, marginBottom:32}}>
-          A bespoke real-time multiplayer trivia game built from scratch to celebrate a friend group\'s one-year anniversary — playable on any device, no app install required.
+          A bespoke real-time multiplayer trivia game built from scratch to celebrate a friend group's one-year anniversary — playable on any device, no app install required.
         </p>
         <div style={{display:'flex', gap:8, flexWrap:'wrap', marginBottom:32}}>
           {['Web App', 'Firebase', 'Multiplayer', 'Mobile-first', 'Solo built', '11 players'].map((tag, i) => (
