@@ -11,17 +11,17 @@ export default async function PostPage({ params }) {
   const fileContents = fs.readFileSync(filePath, 'utf8')
   const { content, data } = matter(fileContents)
   const wordCount = content.split(/\s+/).length
-const readingTime = Math.ceil(wordCount / 200)
+  const readingTime = Math.ceil(wordCount / 200)
 
   const processed = await unified()
     .use(remarkParse)
-    .use(remarkHtml)
+    .use(remarkHtml, { sanitize: false })
     .process(content)
   const htmlContent = processed.toString()
 
   return (
     <main style={{
-      background: '#111010',
+      background: '#FAFAF7',
       minHeight: '100vh',
       padding: '120px 24px 80px',
     }}>
@@ -29,7 +29,6 @@ const readingTime = Math.ceil(wordCount / 200)
         maxWidth: '680px',
         margin: '0 auto',
       }}>
-
         {/* Back link */}
         <a href="/journal" style={{
           fontFamily: 'DM Mono, monospace',
@@ -46,16 +45,16 @@ const readingTime = Math.ceil(wordCount / 200)
         <p style={{
           fontFamily: 'DM Mono, monospace',
           fontSize: '11px',
-          color: '#666',
+          color: '#9A9898',
           letterSpacing: '0.08em',
           marginBottom: '16px',
-    }}>{data.date} · {readingTime} min read</p>
+        }}>{data.date} · {readingTime} min read</p>
 
         {/* Title */}
         <h1 style={{
           fontSize: 'clamp(28px, 4vw, 48px)',
           fontWeight: '700',
-          color: '#F0EDE8',
+          color: '#000000',
           lineHeight: '1.1',
           marginBottom: '16px',
           letterSpacing: '-0.02em',
@@ -73,28 +72,24 @@ const readingTime = Math.ceil(wordCount / 200)
           }}>{data.tag}</p>
         )}
 
-<hr style={{ border: 'none', borderTop: '1px solid #2C2C2C', marginBottom: '16px' }} />
+        <hr style={{ border: 'none', borderTop: '1px solid #DCDAD6', marginBottom: '16px' }} />
+
         {/* Content */}
         <div
           dangerouslySetInnerHTML={{ __html: htmlContent }}
           style={{
-            color: '#C8C4BE',
-            fontSize: '17px',
-            lineHeight: '1.8',
-            fontWeight: '300',
+            fontFamily: 'Inter, sans-serif',
+            fontWeight: '400',
+            color: '#1A1A1A',
+            fontSize: '16px',
+            lineHeight: '1.85',
           }}
         />
-
         <style>{`
-          .post-content p {
-            margin-bottom: 24px;
-          }
-          div[dangerouslysetinnerhtml] p,
-          div p {
-            margin-bottom: 24px;
-          }
+          @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+          .post-content p { margin-bottom: 24px; }
+          div[dangerouslysetinnerhtml] p, div p { margin-bottom: 24px; }
         `}</style>
-
       </div>
     </main>
   )
