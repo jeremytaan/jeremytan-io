@@ -3,75 +3,75 @@ import Image from 'next/image'
 
 export default function TeamInternationalPage() {
   return (
-    <main style={{background:'#111010', minHeight:'100vh', color:'#F0EDE8', fontFamily:'Space Grotesk, sans-serif', overflowX:'hidden'}}>
+    <main style={{background:'#0d0f1a', minHeight:'100vh', color:'#ffffff', fontFamily:'Space Grotesk, sans-serif', overflowX:'hidden'}}>
 
       {/* NAV */}
-      <nav style={{position:'fixed', top:0, left:0, right:0, zIndex:100, display:'flex', justifyContent:'space-between', alignItems:'center', padding:'20px 24px', borderBottom:'1px solid rgba(240,237,232,0.08)', background:'rgba(17,16,16,0.85)', backdropFilter:'blur(12px)'}}>
+      <nav style={{position:'fixed', top:0, left:0, right:0, zIndex:100, display:'flex', justifyContent:'space-between', alignItems:'center', padding:'20px 24px', borderBottom:'1px solid rgba(255,255,255,0.08)', background:'rgba(13,15,26,0.85)', backdropFilter:'blur(12px)'}}>
         <Link href="/" style={{display:'flex', alignItems:'baseline', gap:8, textDecoration:'none', flexShrink:0}}>
-          <span style={{fontSize:14, fontWeight:600, color:'#F0EDE8', letterSpacing:'-0.02em'}}>Jeremy Tan</span>
-          <span style={{fontFamily:'Noto Sans SC, sans-serif', fontSize:12, fontWeight:300, color:'#E8342A', letterSpacing:'0.08em'}}>陈勇流</span>
+          <span style={{fontSize:14, fontWeight:600, color:'#ffffff', letterSpacing:'-0.02em'}}>Jeremy Tan</span>
+          <span style={{fontFamily:'Noto Sans SC, sans-serif', fontSize:12, fontWeight:300, color:'#f5c842', letterSpacing:'0.08em'}}>陈勇流</span>
         </Link>
         <ul style={{display:'flex', gap:20, listStyle:'none', alignItems:'center'}}>
-          <li><Link href="/projects" style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>← Projects</Link></li>
-          <li><Link href="https://www.linkedin.com/in/jeremytan42/" style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#F0EDE8', background:'#E8342A', padding:'8px 14px', textDecoration:'none', whiteSpace:'nowrap'}}>Follow →</Link></li>
+          <li><Link href="/projects" style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#8888aa', textDecoration:'none'}}>← Projects</Link></li>
+          <li><Link href="https://www.linkedin.com/in/jeremytan42/" style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#0d0f1a', background:'#f5c842', padding:'8px 14px', textDecoration:'none', whiteSpace:'nowrap'}}>Follow →</Link></li>
         </ul>
       </nav>
 
       {/* HERO */}
-      <section style={{padding:'140px 24px 60px', borderBottom:'1px solid #2C2825'}}>
+      <section style={{padding:'140px 24px 60px', borderBottom:'1px solid #1e2235'}}>
         <div style={{display:'flex', alignItems:'center', gap:12, marginBottom:12}}>
-          <div style={{width:24, height:1, background:'#E8342A'}} />
-          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#E8342A'}}>Personal Project · 2026</span>
+          <div style={{width:24, height:1, background:'#f5c842'}} />
+          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#f5c842'}}>Personal Project · 2026</span>
         </div>
-        <h1 style={{fontSize:'clamp(36px, 7vw, 72px)', fontWeight:700, letterSpacing:'-0.03em', color:'#F0EDE8', lineHeight:1, marginBottom:16}}>
+        <h1 style={{fontSize:'clamp(36px, 7vw, 72px)', fontWeight:700, letterSpacing:'-0.03em', color:'#ffffff', lineHeight:1, marginBottom:16}}>
           Team International<br/>
-          <span style={{color:'#E8342A'}}>Turns 1</span> · Quiz Showdown
+          <span style={{color:'#f5c842'}}>Turns 1</span> · Quiz Showdown
         </h1>
-        <p style={{fontSize:'clamp(14px, 2vw, 18px)', fontWeight:300, color:'rgba(240,237,232,0.5)', maxWidth:560, lineHeight:1.7, marginBottom:32}}>
-          A bespoke real-time multiplayer trivia game built from scratch to celebrate a friend group's one-year anniversary — playable on any device, no app install required.
+        <p style={{fontSize:'clamp(14px, 2vw, 18px)', fontWeight:300, color:'rgba(255,255,255,0.5)', maxWidth:560, lineHeight:1.7, marginBottom:32}}>
+          A bespoke real-time multiplayer trivia game built from scratch to celebrate a friend group\'s one-year anniversary — playable on any device, no app install required.
         </p>
         <div style={{display:'flex', gap:8, flexWrap:'wrap', marginBottom:32}}>
           {['Web App', 'Firebase', 'Multiplayer', 'Mobile-first', 'Solo built', '11 players'].map((tag, i) => (
-            <span key={i} style={{fontFamily:'DM Mono, monospace', fontSize:9, letterSpacing:'0.1em', textTransform:'uppercase', color:'#7A7268', border:'1px solid #2C2825', padding:'4px 12px'}}>{tag}</span>
+            <span key={i} style={{fontFamily:'DM Mono, monospace', fontSize:9, letterSpacing:'0.1em', textTransform:'uppercase', color:'#8888aa', border:'1px solid #1e2235', padding:'4px 12px'}}>{tag}</span>
           ))}
         </div>
-        <a href="https://internationalquiz.netlify.app/" target="_blank" rel="noopener noreferrer" style={{fontFamily:'DM Mono, monospace', fontSize:11, letterSpacing:'0.08em', color:'#E8342A', textDecoration:'none', borderBottom:'1px solid rgba(232,52,42,0.4)', paddingBottom:2}}>
+        <a href="https://internationalquiz.netlify.app/" target="_blank" rel="noopener noreferrer" style={{fontFamily:'DM Mono, monospace', fontSize:11, letterSpacing:'0.08em', color:'#5bc4c0', textDecoration:'none', borderBottom:'1px solid rgba(91,196,192,0.4)', paddingBottom:2}}>
           internationalquiz.netlify.app ↗
         </a>
       </section>
 
       {/* STATS */}
-      <section style={{padding:'60px 24px', borderBottom:'1px solid #2C2825'}}>
-        <div style={{display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:1, background:'#2C2825'}}>
+      <section style={{padding:'60px 24px', borderBottom:'1px solid #1e2235'}}>
+        <div style={{display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:1, background:'#1e2235'}}>
           {[
             {n:'11', l:'Players on the night'},
             {n:'24', l:'Custom questions'},
             {n:'3', l:'Play modes built'},
           ].map((s, i) => (
-            <div key={i} style={{background:'#181614', padding:'32px 24px'}}>
-              <div style={{fontSize:'clamp(40px, 6vw, 64px)', fontWeight:700, letterSpacing:'-0.03em', color:'#E8342A', lineHeight:1, marginBottom:8}}>{s.n}</div>
-              <div style={{fontFamily:'DM Mono, monospace', fontSize:11, color:'#7A7268', letterSpacing:'0.05em'}}>{s.l}</div>
+            <div key={i} style={{background:'#0d0f1a', padding:'32px 24px'}}>
+              <div style={{fontSize:'clamp(40px, 6vw, 64px)', fontWeight:700, letterSpacing:'-0.03em', color:'#f5c842', lineHeight:1, marginBottom:8}}>{s.n}</div>
+              <div style={{fontFamily:'DM Mono, monospace', fontSize:11, color:'#8888aa', letterSpacing:'0.05em'}}>{s.l}</div>
             </div>
           ))}
         </div>
       </section>
 
       {/* CONTEXT */}
-      <section style={{padding:'60px 24px', borderBottom:'1px solid #2C2825'}}>
+      <section style={{padding:'60px 24px', borderBottom:'1px solid #1e2235'}}>
         <div style={{display:'flex', alignItems:'center', gap:12, marginBottom:24}}>
-          <div style={{width:24, height:1, background:'#E8342A'}} />
-          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#E8342A'}}>Context</span>
+          <div style={{width:24, height:1, background:'#f5c842'}} />
+          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#f5c842'}}>Context</span>
         </div>
-        <p style={{fontSize:'clamp(15px, 2vw, 18px)', fontWeight:300, color:'rgba(240,237,232,0.6)', lineHeight:1.8, maxWidth:640}}>
+        <p style={{fontSize:'clamp(15px, 2vw, 18px)', fontWeight:300, color:'rgba(255,255,255,0.6)', lineHeight:1.8, maxWidth:640}}>
           My close friend group Team International were celebrating our 1 year anniversary. I wanted to make the night feel special — so I designed and built a custom quiz game just for us.
         </p>
       </section>
 
       {/* SCREENS */}
-      <section style={{padding:'60px 24px', borderBottom:'1px solid #2C2825'}}>
+      <section style={{padding:'60px 24px', borderBottom:'1px solid #1e2235'}}>
         <div style={{display:'flex', alignItems:'center', gap:12, marginBottom:32}}>
-          <div style={{width:24, height:1, background:'#E8342A'}} />
-          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#E8342A'}}>Screens</span>
+          <div style={{width:24, height:1, background:'#f5c842'}} />
+          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#f5c842'}}>Screens</span>
         </div>
         <div style={{display:'flex', flexDirection:'column', gap:24}}>
           {[
@@ -80,8 +80,8 @@ export default function TeamInternationalPage() {
             {src:'/projects/team-international/results.png', cap:'03 — Final results · Podium with real scores', w:1534, h:768},
           ].map((img, i) => (
             <div key={i}>
-              <p style={{fontFamily:'DM Mono, monospace', fontSize:10, color:'#4A4540', letterSpacing:'0.08em', marginBottom:12}}>{img.cap}</p>
-              <div style={{position:'relative', width:'100%', borderRadius:0, overflow:'hidden', border:'1px solid #2C2825'}}>
+              <p style={{fontFamily:'DM Mono, monospace', fontSize:10, color:'#8888aa', letterSpacing:'0.08em', marginBottom:12}}>{img.cap}</p>
+              <div style={{position:'relative', width:'100%', overflow:'hidden', border:'1px solid #1e2235'}}>
                 <Image src={img.src} alt={img.cap} width={img.w} height={img.h} style={{width:'100%', height:'auto', display:'block', maxWidth:'70%', margin:'0 auto'}} />
               </div>
             </div>
@@ -90,31 +90,31 @@ export default function TeamInternationalPage() {
       </section>
 
       {/* PLAY MODES */}
-      <section style={{padding:'60px 24px', borderBottom:'1px solid #2C2825'}}>
+      <section style={{padding:'60px 24px', borderBottom:'1px solid #1e2235'}}>
         <div style={{display:'flex', alignItems:'center', gap:12, marginBottom:32}}>
-          <div style={{width:24, height:1, background:'#E8342A'}} />
-          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#E8342A'}}>Play Modes</span>
+          <div style={{width:24, height:1, background:'#f5c842'}} />
+          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#f5c842'}}>Play Modes</span>
         </div>
-        <div className="modes-grid" style={{display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:1, background:'#2C2825'}}>
+        <div className="modes-grid" style={{display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:1, background:'#1e2235'}}>
           {[
             {icon:'🎙️', name:'Host + Players', desc:'One person drives the game. Best for structured trivia nights with a confident host.'},
             {icon:'🤝', name:'Hostless — Auto', desc:'Timer-driven. The game runs itself with no one managing it.'},
             {icon:'📺', name:'TV Display ★', desc:'QR on the TV, everyone plays from their phone. The hit of the night.', featured:true},
           ].map((m, i) => (
-            <div key={i} style={{background: m.featured ? '#1a1614' : '#181614', padding:'32px 24px', borderTop: m.featured ? '2px solid #E8342A' : '2px solid transparent'}}>
+            <div key={i} style={{background:'#0d0f1a', padding:'32px 24px', borderTop: m.featured ? '2px solid #5bc4c0' : '2px solid transparent'}}>
               <div style={{fontSize:24, marginBottom:16}}>{m.icon}</div>
-              <h3 style={{fontSize:15, fontWeight:600, color: m.featured ? '#E8342A' : '#F0EDE8', marginBottom:8}}>{m.name}</h3>
-              <p style={{fontFamily:'DM Mono, monospace', fontSize:11, color:'#7A7268', lineHeight:1.7}}>{m.desc}</p>
+              <h3 style={{fontSize:15, fontWeight:600, color: m.featured ? '#5bc4c0' : '#ffffff', marginBottom:8}}>{m.name}</h3>
+              <p style={{fontFamily:'DM Mono, monospace', fontSize:11, color:'#8888aa', lineHeight:1.7}}>{m.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* HOW I BUILT IT */}
-      <section style={{padding:'60px 24px', borderBottom:'1px solid #2C2825'}}>
+      <section style={{padding:'60px 24px', borderBottom:'1px solid #1e2235'}}>
         <div style={{display:'flex', alignItems:'center', gap:12, marginBottom:32}}>
-          <div style={{width:24, height:1, background:'#E8342A'}} />
-          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#E8342A'}}>How I Built It</span>
+          <div style={{width:24, height:1, background:'#f5c842'}} />
+          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#f5c842'}}>How I Built It</span>
         </div>
         <div style={{display:'flex', flexDirection:'column'}}>
           {[
@@ -124,48 +124,48 @@ export default function TeamInternationalPage() {
             {n:'04', title:'Deployed on Netlify, zero install', body:'Players join via QR code or URL. No app download, no account, no friction. The entire experience runs in the browser.'},
             {n:'05', title:'Branded to the occasion', body:'Custom dark UI with gold type and warm glow — designed to feel like a late-night game show, not a classroom tool.'},
           ].map((step, i) => (
-            <div key={i} style={{display:'grid', gridTemplateColumns:'40px 1fr', gap:24, padding:'28px 0', borderBottom:'1px solid #2C2825'}}>
-              <span style={{fontFamily:'DM Mono, monospace', fontSize:11, color:'#4A4540', paddingTop:3}}>{step.n}</span>
+            <div key={i} style={{display:'grid', gridTemplateColumns:'40px 1fr', gap:24, padding:'28px 0', borderBottom:'1px solid #1e2235'}}>
+              <span style={{fontFamily:'DM Mono, monospace', fontSize:11, color:'#8888aa', paddingTop:3}}>{step.n}</span>
               <div>
-                <h3 style={{fontSize:15, fontWeight:600, color:'#F0EDE8', marginBottom:8}}>{step.title}</h3>
-                <p style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, color:'#7A7268', lineHeight:1.7}}>{step.body}</p>
+                <h3 style={{fontSize:15, fontWeight:600, color:'#ffffff', marginBottom:8}}>{step.title}</h3>
+                <p style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, color:'#8888aa', lineHeight:1.7}}>{step.body}</p>
               </div>
             </div>
           ))}
         </div>
         <div style={{display:'flex', gap:8, flexWrap:'wrap', marginTop:32}}>
           {['Firebase', 'JavaScript', 'HTML / CSS', 'Netlify', 'Real-time DB', 'Mobile-first', 'No-login UX'].map((tag, i) => (
-            <span key={i} style={{fontFamily:'DM Mono, monospace', fontSize:9, letterSpacing:'0.1em', textTransform:'uppercase', color:'#7A7268', border:'1px solid #2C2825', padding:'4px 12px'}}>{tag}</span>
+            <span key={i} style={{fontFamily:'DM Mono, monospace', fontSize:9, letterSpacing:'0.1em', textTransform:'uppercase', color:'#8888aa', border:'1px solid #1e2235', padding:'4px 12px'}}>{tag}</span>
           ))}
         </div>
       </section>
 
       {/* THE NIGHT */}
-      <section style={{padding:'60px 24px', borderBottom:'1px solid #2C2825'}}>
+      <section style={{padding:'60px 24px', borderBottom:'1px solid #1e2235'}}>
         <div style={{display:'flex', alignItems:'center', gap:12, marginBottom:24}}>
-          <div style={{width:24, height:1, background:'#E8342A'}} />
-          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#E8342A'}}>The Night</span>
+          <div style={{width:24, height:1, background:'#f5c842'}} />
+          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#f5c842'}}>The Night</span>
         </div>
-        <p style={{fontSize:'clamp(15px, 2vw, 18px)', fontWeight:300, color:'rgba(240,237,232,0.6)', lineHeight:1.8, maxWidth:640, marginBottom:32}}>
+        <p style={{fontSize:'clamp(15px, 2vw, 18px)', fontWeight:300, color:'rgba(255,255,255,0.6)', lineHeight:1.8, maxWidth:640, marginBottom:32}}>
           The app ran live without a hitch. All 11 players joined via QR code on the TV, competed across 24 questions and 4 rounds, and had a genuinely chaotic, competitive time. The personalisation — their own faces on the answer cards, questions written specifically about them — made it land in a way no off-the-shelf tool could have.
         </p>
-        <div style={{background:'#181614', border:'1px solid #2C2825', padding:'32px 24px'}}>
-          <p style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.12em', textTransform:'uppercase', color:'#4A4540', marginBottom:24}}>Final standings</p>
-          <div className="podium" style={{display:'grid', gridTemplateColumns:'1fr 1.15fr 1fr', gap:1, background:'#2C2825', marginBottom:1}}>
+        <div style={{background:'#1e2235', border:'1px solid #2a2f4a', padding:'32px 24px'}}>
+          <p style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.12em', textTransform:'uppercase', color:'#8888aa', marginBottom:24}}>Final standings</p>
+          <div className="podium" style={{display:'grid', gridTemplateColumns:'1fr 1.15fr 1fr', gap:1, background:'#2a2f4a', marginBottom:1}}>
             {[
-              {pos:'2', name:'Carol', pts:'27,404', color:'rgba(192,192,192,0.08)', border:'rgba(192,192,192,0.2)'},
-              {pos:'1', name:'Jarrod', pts:'29,048', color:'rgba(232,52,42,0.08)', border:'#E8342A', emoji:'🦊'},
-              {pos:'3', name:'Jeremy', pts:'27,339', color:'rgba(205,127,50,0.07)', border:'rgba(205,127,50,0.3)'},
+              {pos:'2', name:'Carol', pts:'27,404', bg:'#b0b8c1', textColor:'#1e2235', ptsColor:'#4a5568'},
+              {pos:'1', name:'Jarrod', pts:'29,048', bg:'#f5c842', textColor:'#0d0f1a', ptsColor:'#6b4f00', emoji:'🦊'},
+              {pos:'3', name:'Jeremy', pts:'27,339', bg:'#b87333', textColor:'#ffffff', ptsColor:'rgba(255,255,255,0.6)'},
             ].map((p, i) => (
-              <div key={i} style={{background:p.color, padding:'24px 16px', textAlign:'center', borderTop:`2px solid ${p.border}`}}>
+              <div key={i} style={{background:p.bg, padding:'24px 16px', textAlign:'center'}}>
                 {p.emoji && <div style={{fontSize:20, marginBottom:6}}>{p.emoji}</div>}
-                <div style={{fontSize:'clamp(28px, 5vw, 48px)', fontWeight:700, color: i===1 ? '#E8342A' : '#4A4540', letterSpacing:'-0.03em', lineHeight:1, marginBottom:8}}>{p.pos}</div>
-                <div style={{fontSize:13, fontWeight:500, color:'#F0EDE8', marginBottom:4}}>{p.name}</div>
-                <div style={{fontFamily:'DM Mono, monospace', fontSize:10, color:'#7A7268'}}>{p.pts} pts</div>
+                <div style={{fontSize:'clamp(28px, 5vw, 48px)', fontWeight:700, color:p.textColor, letterSpacing:'-0.03em', lineHeight:1, marginBottom:8}}>{p.pos}</div>
+                <div style={{fontSize:13, fontWeight:600, color:p.textColor, marginBottom:4}}>{p.name}</div>
+                <div style={{fontFamily:'DM Mono, monospace', fontSize:10, color:p.ptsColor}}>{p.pts} pts</div>
               </div>
             ))}
           </div>
-          <div style={{display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:1, background:'#2C2825'}}>
+          <div style={{display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:1, background:'#2a2f4a'}}>
             {[
               {r:'4', n:'John', p:'25,921'},
               {r:'5', n:'Mavis', p:'25,544'},
@@ -176,10 +176,10 @@ export default function TeamInternationalPage() {
               {r:'10', n:'Chonny', p:'19,526'},
               {r:'11', n:'Steph', p:'17,603'},
             ].map((p, i) => (
-              <div key={i} style={{background:'#181614', padding:'16px 12px'}}>
-                <div style={{fontFamily:'DM Mono, monospace', fontSize:10, color:'#4A4540', marginBottom:4}}>{p.r}</div>
-                <div style={{fontSize:12, fontWeight:500, color:'#F0EDE8', marginBottom:2}}>{p.n}</div>
-                <div style={{fontFamily:'DM Mono, monospace', fontSize:10, color:'#E8342A'}}>{p.p}</div>
+              <div key={i} style={{background:'#1e2235', padding:'16px 12px'}}>
+                <div style={{fontFamily:'DM Mono, monospace', fontSize:10, color:'#8888aa', marginBottom:4}}>{p.r}</div>
+                <div style={{fontSize:12, fontWeight:500, color:'#ffffff', marginBottom:2}}>{p.n}</div>
+                <div style={{fontFamily:'DM Mono, monospace', fontSize:10, color:'#f5c842'}}>{p.p}</div>
               </div>
             ))}
           </div>
@@ -187,33 +187,33 @@ export default function TeamInternationalPage() {
       </section>
 
       {/* REFLECTIONS */}
-      <section style={{padding:'60px 24px 80px', borderBottom:'1px solid #2C2825'}}>
+      <section style={{padding:'60px 24px 80px', borderBottom:'1px solid #1e2235'}}>
         <div style={{display:'flex', alignItems:'center', gap:12, marginBottom:32}}>
-          <div style={{width:24, height:1, background:'#E8342A'}} />
-          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#E8342A'}}>Reflections</span>
+          <div style={{width:24, height:1, background:'#f5c842'}} />
+          <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#f5c842'}}>Reflections</span>
         </div>
-        <div className="ref-grid" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:1, background:'#2C2825', marginBottom:32}}>
+        <div className="ref-grid" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:1, background:'#1e2235', marginBottom:32}}>
           {[
             {title:'What worked', body:'TV Display mode was the standout — projecting to a shared screen while everyone plays on their phone is the natural living room experience. The personalisation made it feel special, not just functional.'},
-            {title:"What's next", body:'Custom question authoring so anyone can run their own quiz night. Shareable results cards. Persistent player profiles. The core mechanic is solid — the opportunity is making it reusable beyond one event.'},
+            {title:"What\'s next", body:'Custom question authoring so anyone can run their own quiz night. Shareable results cards. Persistent player profiles. The core mechanic is solid — the opportunity is making it reusable beyond one event.'},
           ].map((r, i) => (
-            <div key={i} style={{background:'#181614', padding:'32px 24px'}}>
-              <h3 style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.12em', textTransform:'uppercase', color:'#E8342A', marginBottom:12}}>{r.title}</h3>
-              <p style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, color:'#7A7268', lineHeight:1.7}}>{r.body}</p>
+            <div key={i} style={{background:'#0d0f1a', padding:'32px 24px'}}>
+              <h3 style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.12em', textTransform:'uppercase', color:'#f5c842', marginBottom:12}}>{r.title}</h3>
+              <p style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, color:'#8888aa', lineHeight:1.7}}>{r.body}</p>
             </div>
           ))}
         </div>
-        <div style={{borderLeft:'2px solid #E8342A', paddingLeft:20, paddingTop:4, paddingBottom:4}}>
-          <p style={{fontSize:'clamp(15px, 2vw, 18px)', fontWeight:300, color:'rgba(240,237,232,0.5)', lineHeight:1.8, fontStyle:'italic'}}>
+        <div style={{borderLeft:'2px solid #5bc4c0', paddingLeft:20, paddingTop:4, paddingBottom:4}}>
+          <p style={{fontSize:'clamp(15px, 2vw, 18px)', fontWeight:300, color:'rgba(255,255,255,0.5)', lineHeight:1.8, fontStyle:'italic'}}>
             "Building something real for real people, under a real deadline, with a stack I was still learning — this showed me I could move from idea to shipped product, end to end, solo."
           </p>
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer style={{background:'#181614', borderTop:'1px solid #2C2825', padding:'40px 24px', display:'flex', justifyContent:'space-between', alignItems:'center', flexWrap:'wrap', gap:16}}>
-        <Link href="/projects" style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.15em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>← All projects</Link>
-        <a href="https://internationalquiz.netlify.app/" target="_blank" rel="noopener noreferrer" style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.15em', textTransform:'uppercase', color:'#E8342A', textDecoration:'none'}}>Live app ↗</a>
+      <footer style={{background:'#1e2235', borderTop:'1px solid #2a2f4a', padding:'40px 24px', display:'flex', justifyContent:'space-between', alignItems:'center', flexWrap:'wrap', gap:16}}>
+        <Link href="/projects" style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.15em', textTransform:'uppercase', color:'#8888aa', textDecoration:'none'}}>← All projects</Link>
+        <a href="https://internationalquiz.netlify.app/" target="_blank" rel="noopener noreferrer" style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.15em', textTransform:'uppercase', color:'#f5c842', textDecoration:'none'}}>Live app ↗</a>
       </footer>
 
       <style>{`
