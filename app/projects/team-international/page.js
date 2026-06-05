@@ -121,7 +121,7 @@ export default function TeamInternationalPage() {
           {[
             {n:'01', title:'Designed the experience first', body:'Mapped the full game flow — lobby join → question → answer reveal → leaderboard → final results — keeping friction as low as possible for non-technical guests joining mid-party.'},
             {n:'02', title:'Custom questions about real people', body:'Wrote 24 "most likely to…" questions across 4 rounds: Warm-Up, Inside Jokes, Fun & Playful, and Cheeky & Fun — each answer option featuring a real friend\'s name and photo.'},
-            {n:'03', title:'Real-time sync with Firebase', body:'Firebase Realtime Database keeps all 11 players in sync — answer submissions, round transitions, and live score updates — without any polling.'},
+            {n:'03', title:'Real-time sync with Firebase', body:'Firebase Realtime Database keeps all 11 players in sync — answer submissions, round transitions, and live score updates happen instantly across every device.'},
             {n:'04', title:'Deployed on Netlify, zero install', body:'Players join via QR code or URL. No app download, no account, no friction. The entire experience runs in the browser.'},
             {n:'05', title:'Branded to the occasion', body:'Custom dark UI with gold type and warm glow — designed to feel like a late-night game show, not a classroom tool.'},
           ].map((step, i) => (
