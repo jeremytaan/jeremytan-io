@@ -205,7 +205,7 @@ export default function TeamInternationalPage() {
         </div>
         <div style={{borderLeft:'2px solid #5bc4c0', paddingLeft:20, paddingTop:4, paddingBottom:4}}>
           <p style={{fontSize:'clamp(15px, 2vw, 18px)', fontWeight:300, color:'rgba(255,255,255,0.5)', lineHeight:1.8, fontStyle:'italic'}}>
-            "Building something real for real people, under a real deadline, with a stack I was still learning — this showed me I could move from idea to shipped product, end to end, solo."
+            "Building something meaningful for people I care about, launched in two days on a stack I was still learning — this showed me I could move from idea to product, end to end, solo."
           </p>
         </div>
       </section>
