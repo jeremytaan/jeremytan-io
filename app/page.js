@@ -43,7 +43,7 @@ export default function Home() {
           </p>
           <div style={{display:'flex', flexDirection:'column', alignItems:'flex-end', gap:12, flexShrink:0}}>
             {[
-              {label:'Building', value:'Aureli', zh:'金融助手'},
+              {label:'Building', value:'Kron', zh:'金融助手'},
               {label:'Languages', value:'English · ', zh:'普通话'},
               {label:'Mission', value:'$1B ARR', zh:'千亿目标'},
             ].map((item, i) => (
@@ -103,7 +103,6 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* PROJECTS */}
       <section style={{padding:'80px 24px', borderTop:'1px solid #2C2825'}} id="projects">
         <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-start', marginBottom:48, flexWrap:'wrap', gap:16}}>
@@ -146,9 +145,9 @@ export default function Home() {
         </div>
         <div className="work-grid" style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:1, background:'#2C2825'}}>
           {[
-            {num:'01', status:'In progress', name:'Aureli', zh:'金融助手 · AI Finance Coach', desc:'AI-powered personal finance coach for young Australians who were never given a framework that worked for their brain.'},
-            {num:'02', status:'Case study', name:'Patiently', zh:'医疗预约 · Medical Booking', desc:'Medical appointment booking platform designed for the Australian healthcare market.'},
-            {num:'03', status:'Case study', name:'Rejection Tracker', zh:'拒绝追踪 · Resilience App', desc:'iOS resilience app that reframes rejection as progress — built for the general adult audience.'},
+            {num:'01', status:'In progress', name:'Kron', zh:'金融助手 · AI Finance Coach', desc:'AI-powered personal finance coach for young Australians who were never given a framework that worked for their brain.'},
+            {num:'02', status:'In progress', name:'Patiently', zh:'医疗预约 · Medical Booking', desc:'Medical appointment booking platform designed for the Australian healthcare market.'},
+            {num:'03', status:'In progress', name:'Atria', zh:'放手一搏 · Resilience App', desc:'A personal resilience tracker for ambitious people who keep putting themselves in the arena.'},
           ].map((project, i) => (
             <div key={i} style={{background:'#181614', padding:'32px 24px', cursor:'pointer', position:'relative'}}>
               <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-start', marginBottom:40}}>
