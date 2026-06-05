@@ -119,7 +119,7 @@ export default function TeamInternationalPage() {
         </div>
         <div style={{display:'flex', flexDirection:'column'}}>
           {[
-            {n:'01', title:'Designed the experience first', body:'Mapped the full game flow — lobby join → question → answer reveal → leaderboard → final results — keeping friction as low as possible for non-technical guests joining mid-party.'},
+            {n:'01', title:'Designed the experience first', body:'Mapped the full game flow — lobby join → questions → answer reveal → leaderboard → final results — keeping the experience as smooth and enjoyable as possible for everyone playing.'},
             {n:'02', title:'Custom questions about real people', body:'Wrote 24 "most likely to…" questions across 4 rounds: Warm-Up, Inside Jokes, Fun & Playful, and Cheeky & Fun — each answer option featuring a real friend\'s name and photo.'},
             {n:'03', title:'Real-time sync with Firebase', body:'Firebase Realtime Database keeps all 11 players in sync — answer submissions, round transitions, and live score updates happen instantly across every device.'},
             {n:'04', title:'Deployed on Netlify, zero install', body:'Players join via QR code or URL. No app download, no account, no friction. The entire experience runs in the browser.'},
@@ -148,7 +148,7 @@ export default function TeamInternationalPage() {
           <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#f5c842'}}>The Night</span>
         </div>
         <p style={{fontSize:'clamp(15px, 2vw, 18px)', fontWeight:300, color:'rgba(255,255,255,0.6)', lineHeight:1.8, maxWidth:640, marginBottom:32}}>
-          The app ran live without a hitch. All 11 players joined via QR code on the TV, competed across 24 questions and 4 rounds, and had a genuinely chaotic, competitive time. The personalisation — their own faces on the answer cards, questions written specifically about them — made it land in a way no off-the-shelf tool could have.
+          11 players, 24 questions, 3 rounds. The room was loud and competitive from the gun. Everyone's faces on the answer cards, questions written specifically about them — it made the night feel like something no off-the-shelf tool could replicate.
         </p>
         <div style={{background:'#0d0f1a', border:'1px solid rgba(245,200,66,0.5)', padding:'32px 24px'}}>
           <p style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.12em', textTransform:'uppercase', color:'#f5c842', marginBottom:24}}>Final standings</p>
