@@ -76,8 +76,9 @@ export default function TeamInternationalPage() {
         <div style={{display:'flex', flexDirection:'column', gap:24}}>
           {[
             {src:'/projects/team-international/home.png', cap:'01 — Home screen · Mode selection', w:1534, h:768},
-            {src:'/projects/team-international/question.jpg', cap:'02 — In-game · Question screen with player photos', w:1534, h:790},
-            {src:'/projects/team-international/results.png', cap:'03 — Final results · Podium with real scores', w:1534, h:768},
+            {src:'/projects/team-international/qr.png', cap:'02 — TV Display · QR code lobby with live player slots', w:1534, h:768},
+            {src:'/projects/team-international/question.jpg', cap:'03 — In-game · Question screen with player photos', w:1534, h:790},
+            {src:'/projects/team-international/results.png', cap:'04 — Final results · Podium with real scores', w:1534, h:768},
           ].map((img, i) => (
             <div key={i}>
               <p style={{fontFamily:'DM Mono, monospace', fontSize:12, color:'#8888aa', letterSpacing:'0.08em', marginBottom:12}}>{img.cap}</p>
