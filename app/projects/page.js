@@ -41,7 +41,7 @@ export default function ProjectsPage() {
           Projects <span style={{fontFamily:'Noto Sans SC, sans-serif', fontSize:'0.4em', fontWeight:300, color:'#7A7268', marginLeft:12, letterSpacing:'0.1em', verticalAlign:'middle'}}>作品</span>
         </h1>
         <p style={{fontFamily:'DM Mono, monospace', fontSize:12, fontWeight:300, color:'#7A7268', maxWidth:480, lineHeight:1.7}}>
-          Things I've built outside of client work — for fun, for friends, or because I couldn't stop thinking about the problem.
+          Things I've built outside of client work — for fun, for friends, or because the idea wouldn't leave me alone.
         </p>
       </section>
 
