@@ -146,7 +146,7 @@ export default function Home() {
         <div className="work-grid" style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:1, background:'#2C2825'}}>
           {[
             {num:'01', status:'In progress', name:'Kron', zh:'金融助手 · AI Finance Coach', desc:'AI-powered personal finance coach for young Australians who were never given a framework that worked for their brain.'},
-            {num:'02', status:'In progress', name:'Patiently', zh:'医疗预约 · Medical Booking Platform', desc:'A smarter way to book medical appointments — designed for the Australian healthcare system.'},
+            {num:'02', status:'In progress', name:'Patiently', zh:'医疗预约 · Booking Platform', desc:'A smarter way to book medical appointments — designed for the Australian healthcare system.'},
             {num:'03', status:'In progress', name:'Atria', zh:'放手一搏 · Resilience App', desc:'A personal resilience tracker for ambitious people who keep putting themselves in the arena.'},
           ].map((project, i) => (
             <div key={i} style={{background:'#181614', padding:'32px 24px', cursor:'pointer', position:'relative'}}>
