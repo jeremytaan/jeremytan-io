@@ -181,7 +181,7 @@ export default function Home() {
           <p style={{fontSize:'clamp(14px, 2vw, 20px)', fontWeight:300, lineHeight:1.8, color:'rgba(240,237,232,0.5)'}}>
             I&apos;m an <strong style={{color:'#F0EDE8', fontWeight:500}}>Australian Born Chinese</strong> — raised in Sydney, shaped by <span style={{fontFamily:'Noto Sans SC, sans-serif', color:'#E8342A', fontWeight:300}}>两个世界</span>.<br/><br/>
             My Chinese parents pushed the <strong style={{color:'#F0EDE8', fontWeight:500}}>traditional corporate path</strong>. I pushed back. I dropped out of university, started my first business at 14 photographing nightlife, co-founded a podcast about escaping the 9-5, and now I&apos;m building a <span style={{color:'#E8342A'}}>$1B FinTech app</span> — solo, with AI as my co-founder.<br/><br/>
-            I&apos;m also slowly learning <strong style={{color:'#F0EDE8', fontWeight:500}}>Cantonese</strong> — because some things are best said in the language your grandparents used. <span style={{fontFamily:'Noto Sans SC, sans-serif', color:'#E8342A', fontWeight:300}}>慢慢来。</span>
+            I&apos;m also slowly learning <strong style={{color:'#F0EDE8', fontWeight:500}}>Cantonese</strong> — because some things are best said in the language your grandparents spoke. <span style={{fontFamily:'Noto Sans SC, sans-serif', color:'#E8342A', fontWeight:300}}>慢慢来。</span>
           </p>
           <div style={{display:'flex', flexDirection:'column'}}>
             {[
