@@ -44,6 +44,10 @@ export default function About() {
             Between Two Worlds
           </span>
 
+          <p style={{ fontSize: 'clamp(15px, 1.8vw, 18px)', fontWeight: 300, color: 'rgba(240,237,232,0.6)', lineHeight: 1.75, marginBottom: 40, maxWidth: 480 }}>
+            East and West. Two worlds, two ways of thinking. Growing up between them taught me to never assume there&apos;s only one way.
+          </p>
+
           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
             <div style={{ width: 24, height: 1, background: '#E8342A' }} />
             <span style={{ fontFamily: 'DM Mono, monospace', fontSize: 10, color: '#7A7268', letterSpacing: '0.1em' }}>Sydney, Australia · 悉尼</span>
