@@ -202,7 +202,9 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <Link href="/about" style={{fontFamily:'DM Mono, monospace', fontSize:13, fontWeight:400, letterSpacing:'0.12em', textTransform:'uppercase', color:'#E8342A', textDecoration:'none', border:'1px solid #E8342A', padding:'12px 24px', display:'inline-block', marginTop:48}}>Read my story →</Link>
+        <div style={{marginTop:48}}>
+          <Link href="/about" style={{fontFamily:'DM Mono, monospace', fontSize:13, fontWeight:400, letterSpacing:'0.12em', textTransform:'uppercase', color:'#E8342A', textDecoration:'none', border:'1px solid #E8342A', padding:'14px 28px', display:'inline-block'}}>Read my story →</Link>
+        </div>
       </section>
 
       {/* FOOTER */}
