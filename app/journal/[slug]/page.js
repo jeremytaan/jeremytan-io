@@ -104,7 +104,7 @@ export default async function PostPage({ params }) {
         <style>{`
           @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
           .post-content p { margin-bottom: 24px; }
-          div[dangerouslysetinnerhtml] p, div p { margin-bottom: 24px; }
+          div[dangerouslysetinnerhtml] p, div p { margin-bottom: 24px; } div img { width: 100%; max-height: 420px; object-fit: cover; object-position: top; border-radius: 4px; margin-bottom: 40px; display: block; }
         `}</style>
       </div>
     </main>
