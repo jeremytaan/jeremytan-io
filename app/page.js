@@ -204,9 +204,6 @@ export default function Home() {
         </div>
       </section>
 
-        <Link href="/about" style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.15em', textTransform:'uppercase', color:'#E8342A', textDecoration:'none', display:'inline-block', marginTop:40}}>Read my story →</Link>
-      </section>
-
       {/* FOOTER */}
       <footer style={{background:'#181614', borderTop:'1px solid #2C2825', padding:'40px 24px', display:'flex', justifyContent:'center', gap:'24px', alignItems:'center', flexWrap:'wrap'}}>
         <a href="https://www.linkedin.com/in/jeremytan42/" target="_blank" rel="noopener noreferrer" style={{color:'#7A7268'}}>
