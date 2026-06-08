@@ -36,7 +36,7 @@ export default async function PostPage({ params }) {
     <main style={{
       background: '#FAFAF7',
       minHeight: '100vh',
-      padding: '120px 24px 80px',
+      padding: '80px 24px 80px',
     }}>
       <div style={{
         maxWidth: '680px',
@@ -78,7 +78,7 @@ export default async function PostPage({ params }) {
         }}>{data.date} · {readingTime} min read</p>
 
         <h1 style={{
-          fontSize: 'clamp(28px, 4vw, 48px)',
+          fontSize: 'clamp(24px, 5vw, 48px)',
           fontWeight: '700',
           color: '#000000',
           lineHeight: '1.1',
@@ -105,7 +105,7 @@ export default async function PostPage({ params }) {
             fontFamily: 'Inter, sans-serif',
             fontWeight: '400',
             color: '#1A1A1A',
-            fontSize: '16px',
+            fontSize: '15px',
             lineHeight: '1.85',
           }}
         />
