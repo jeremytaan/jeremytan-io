@@ -17,7 +17,20 @@ export default async function PostPage({ params }) {
     .use(remarkParse)
     .use(remarkHtml, { sanitize: false })
     .process(content)
+
+  const wrapperStyle = `position:relative;display:block;margin-bottom:16px;`
+  const imgStyle = `width:100%;max-height:420px;object-fit:cover;object-position:top;border-radius:4px;display:block;`
+  const captionStyle = `position:absolute;bottom:12px;left:0;right:0;text-align:center;font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.08em;`
+
   const htmlContent = processed.toString()
+    .replace(
+      /<p><img src="([^"]+)" alt="([^"]*)"[^>]*><\/p>/g,
+      `<div style="${wrapperStyle}"><img src="$1" alt="$2" style="${imgStyle}">CAPTION_PLACEHOLDER</div>`
+    )
+    .replace(
+      /CAPTION_PLACEHOLDER<\/div>\s*<p><em>(.*?)<\/em><\/p>/g,
+      `<span style="${captionStyle}">$1</span></div>`
+    )
 
   return (
     <main style={{
@@ -29,7 +42,6 @@ export default async function PostPage({ params }) {
         maxWidth: '680px',
         margin: '0 auto',
       }}>
-        {/* Navigation links */}
         <div style={{
           display: 'flex',
           alignItems: 'center',
@@ -57,7 +69,6 @@ export default async function PostPage({ params }) {
           </a>
         </div>
 
-        {/* Date */}
         <p style={{
           fontFamily: 'DM Mono, monospace',
           fontSize: '11px',
@@ -66,7 +77,6 @@ export default async function PostPage({ params }) {
           marginBottom: '16px',
         }}>{data.date} · {readingTime} min read</p>
 
-        {/* Title */}
         <h1 style={{
           fontSize: 'clamp(28px, 4vw, 48px)',
           fontWeight: '700',
@@ -76,7 +86,6 @@ export default async function PostPage({ params }) {
           letterSpacing: '-0.02em',
         }}>{data.title}</h1>
 
-        {/* Tag */}
         {data.tag && (
           <p style={{
             fontFamily: 'DM Mono, monospace',
@@ -90,7 +99,6 @@ export default async function PostPage({ params }) {
 
         <hr style={{ border: 'none', borderTop: '1px solid #DCDAD6', marginBottom: '16px' }} />
 
-        {/* Content */}
         <div
           dangerouslySetInnerHTML={{ __html: htmlContent }}
           style={{
@@ -103,8 +111,7 @@ export default async function PostPage({ params }) {
         />
         <style>{`
           @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
-          .post-content p { margin-bottom: 24px; }
-          div[dangerouslysetinnerhtml] p, div p { margin-bottom: 24px; } div img { width: 100%; max-height: 420px; object-fit: cover; object-position: top; border-radius: 4px; margin-bottom: 40px; display: block; }
+          div[dangerouslysetinnerhtml] p, div p { margin-bottom: 24px; }
         `}</style>
       </div>
     </main>
