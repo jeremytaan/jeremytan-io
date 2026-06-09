@@ -19,6 +19,9 @@ export default function TeamInternationalPage() {
 
       {/* HERO */}
       <section style={{padding:'140px 24px 60px', borderBottom:'1px solid #1e2235'}}>
+        <a href='/' style={{display:'inline-flex',alignItems:'center',marginBottom:20,textDecoration:'none'}}>
+          <svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='#f5c842' strokeWidth='1.5' strokeLinecap='round' strokeLinejoin='round'><path d='M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z'/><path d='M9 21V12h6v9'/></svg>
+        </a>
         <div style={{display:'flex', alignItems:'center', gap:12, marginBottom:12}}>
           <div style={{width:24, height:1, background:'#f5c842'}} />
           <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#f5c842'}}>Personal Project · 2026</span>

@@ -33,6 +33,9 @@ export default function ProjectsPage() {
 
       {/* HEADER */}
       <section style={{padding:'140px 24px 60px', borderBottom:'1px solid #2C2825'}}>
+        <a href='/' style={{display:'inline-flex',alignItems:'center',marginBottom:20,textDecoration:'none'}}>
+          <svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='#E8342A' strokeWidth='1.5' strokeLinecap='round' strokeLinejoin='round'><path d='M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z'/><path d='M9 21V12h6v9'/></svg>
+        </a>
         <div style={{display:'flex', alignItems:'center', gap:12, marginBottom:12}}>
           <div style={{width:24, height:1, background:'#E8342A'}} />
           <span style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.2em', textTransform:'uppercase', color:'#E8342A'}}>Personal projects</span>
@@ -75,10 +78,7 @@ export default function ProjectsPage() {
         ))}
       </section>
 
-      {/* FOOTER */}
-      <footer style={{background:'#181614', borderTop:'1px solid #2C2825', padding:'40px 24px', display:'flex', justifyContent:'center', gap:'24px', alignItems:'center', flexWrap:'wrap'}}>
-        <Link href="/" style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.15em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>← Back home</Link>
-      </footer>
+
 
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Mono:wght@300;400&display=swap');
