@@ -5,6 +5,29 @@ import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkHtml from 'remark-html'
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params
+  const filePath = path.join(process.cwd(), 'posts', `${slug}.mdx`)
+  const fileContents = fs.readFileSync(filePath, 'utf8')
+  const { data } = matter(fileContents)
+  return {
+    title: data.title,
+    description: data.description || '',
+    openGraph: {
+      title: data.title,
+      description: data.description || '',
+      images: data.ogImage ? [{ url: `https://www.jeremytan.io${data.ogImage}`, width: 1200, height: 630 }] : [],
+      type: 'article',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: data.title,
+      description: data.description || '',
+      images: data.ogImage ? [`https://www.jeremytan.io${data.ogImage}`] : [],
+    },
+  }
+}
+
 export default async function PostPage({ params }) {
   const { slug } = await params
   const filePath = path.join(process.cwd(), 'posts', `${slug}.mdx`)
