@@ -152,7 +152,7 @@ export default function Home() {
             <div key={i} style={{background:'#181614', padding:'32px 24px', cursor:'pointer', position:'relative'}}>
               <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-start', marginBottom:40}}>
                 <span style={{fontFamily:'DM Mono, monospace', fontSize:10, letterSpacing:'0.12em', color:'#4A4540'}}>{project.num}</span>
-                <span style={{fontFamily:'DM Mono, monospace', fontSize:9, letterSpacing:'0.1em', textTransform:'uppercase', color:'#E8342A', border:'1px solid #E8342A', padding:'2px 8px'}}>{project.status}</span>
+                <span style={{fontFamily:'DM Mono, monospace', fontSize:9, letterSpacing:'0.1em', textTransform:'uppercase', color:'#E8342A', border:'1px solid #E8342A', padding:'2px 8px', borderRadius:6}}>{project.status}</span>
               </div>
               <h3 style={{fontSize:'clamp(22px, 4vw, 32px)', fontWeight:700, letterSpacing:'-0.02em', color:'#F0EDE8', lineHeight:1, marginBottom:4}}>{project.name}</h3>
               <span style={{fontFamily:'Noto Sans SC, sans-serif', fontSize:12, fontWeight:300, color:'#7A7268', letterSpacing:'0.08em', display:'block', marginBottom:16}}>{project.zh}</span>
