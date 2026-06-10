@@ -33,13 +33,11 @@ export default function JournalPage() {
 
         {posts.map(post => (
           <div key={post.slug}>
-            <Link href={`/journal/${post.slug}`} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '32px 0' }}>
-              <div>
-                <p style={{ fontFamily: 'DM Mono, monospace', fontSize: '11px', color: '#666', marginBottom: '12px' }}>{post.slug}</p>
-                <h2 style={{ fontSize: '18px', fontWeight: '500', color: '#F0EDE8', marginBottom: '12px' }}>{post.title}</h2>
-                {post.tag && <span style={{ fontFamily: 'DM Mono, monospace', fontSize: '10px', color: '#E8342A', border: '1px solid #E8342A', padding: '3px 8px', letterSpacing: '0.08em' }}>{post.tag}</span>}
-              </div>
-              <p style={{ fontFamily: 'DM Mono, monospace', fontSize: '11px', color: '#666' }}>{post.date}</p>
+            <Link href={`/journal/${post.slug}`} style={{ textDecoration: 'none', color: 'inherit', display: 'block', padding: '32px 0' }}>
+              <p style={{ fontFamily: 'DM Mono, monospace', fontSize: '11px', color: '#666', marginBottom: '12px' }}>{post.slug}</p>
+              <h2 style={{ fontSize: '18px', fontWeight: '500', color: '#F0EDE8', marginBottom: '12px' }}>{post.title}</h2>
+              {post.tag && <span style={{ fontFamily: 'DM Mono, monospace', fontSize: '10px', color: '#E8342A', border: '1px solid #E8342A', padding: '3px 8px', letterSpacing: '0.08em' }}>{post.tag}</span>}
+<p style={{ fontFamily: 'DM Mono, monospace', fontSize: '11px', color: '#666', marginTop: '16px' }}>{post.date}</p>
             </Link>
             <hr style={{ border: 'none', borderTop: '1px solid #2C2C2C' }} />
           </div>
