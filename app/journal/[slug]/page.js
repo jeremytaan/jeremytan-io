@@ -116,7 +116,7 @@ export default async function PostPage({ params }) {
             color: '#E8342A',
             letterSpacing: '0.1em',
             textTransform: 'uppercase',
-            marginBottom: '56px',
+            marginBottom: '24px',
           }}>{data.tag}</p>
         )}
 
