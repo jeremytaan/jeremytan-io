@@ -41,7 +41,7 @@ export default async function PostPage({ params }) {
     .use(remarkHtml, { sanitize: false })
     .process(content)
 
-  const wrapperStyle = `position:relative;display:block;margin-bottom:16px;`
+  const wrapperStyle = `position:relative;display:block;margin-bottom:16px;border-top:1px solid rgba(0,0,0,0.04);padding-top:24px;`
   const imgStyle = `width:100%;max-height:420px;object-fit:cover;object-position:top;border-radius:4px;display:block;`
   const captionStyle = `position:absolute;bottom:12px;left:0;right:0;text-align:center;font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.08em;`
 
@@ -116,11 +116,11 @@ export default async function PostPage({ params }) {
             color: '#E8342A',
             letterSpacing: '0.1em',
             textTransform: 'uppercase',
-            marginBottom: '24px',
+            marginBottom: '8px',
           }}>{data.tag}</p>
         )}
 
-        <hr style={{ border: 'none', borderTop: '1px solid #DCDAD6', marginBottom: '16px' }} />
+        <hr style={{ border: "none", borderTop: "1px solid #DCDAD6", marginTop: "12px", marginBottom: "0px" }} />
 
         <div
           dangerouslySetInnerHTML={{ __html: htmlContent }}
