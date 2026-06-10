@@ -184,7 +184,7 @@ export default function Home() {
               My Chinese parents pushed the <strong style={{color:'#F0EDE8', fontWeight:500}}>traditional corporate path</strong>. I pushed back. I dropped out of university, started my first business at 14 photographing nightlife, co-founded a podcast about escaping the 9-5, and now I&apos;m building a <span style={{color:'#E8342A'}}>$1B FinTech app</span> — solo, with AI as my co-founder.<br/><br/>
               I&apos;m also slowly learning <strong style={{color:'#F0EDE8', fontWeight:500}}>Cantonese</strong> — because some things are best said in the language your grandparents spoke. <span style={{fontFamily:'Noto Sans SC, sans-serif', color:'#E8342A', fontWeight:300}}>慢慢来。</span>
             </p>
-            <Link href="/about" style={{fontFamily:'DM Mono, monospace', fontSize:13, fontWeight:400, letterSpacing:'0.12em', textTransform:'uppercase', color:'#E8342A', textDecoration:'none', border:'1px solid #E8342A', padding:'14px 28px', display:'inline-block'}}>Read my story →</Link>
+            <Link href="/about" style={{fontFamily:'DM Mono, monospace', fontSize:13, fontWeight:400, letterSpacing:'0.12em', textTransform:'uppercase', color:'#E8342A', textDecoration:'none', border:'1.5px solid rgba(232,52,42,0.7)', borderRadius:'999px', padding:'14px 28px', display:'inline-block'}}>Read my story →</Link>
           </div>
           <div style={{display:'flex', flexDirection:'column'}}>
             {[
