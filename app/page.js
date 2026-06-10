@@ -15,7 +15,7 @@ export default function Home() {
           <li className="nav-link-item"><Link href="#projects" style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>Projects</Link></li>
           <li className="nav-link-item"><Link href="#work" style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>Work</Link></li>
           <li className="nav-link-item"><Link href="/about" style={{fontFamily:'DM Mono, monospace', fontSize:11, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#7A7268', textDecoration:'none'}}>About</Link></li>
-          <li><Link href="https://www.linkedin.com/in/jeremytan42/" style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'#F0EDE8', background:'#E8342A', padding:'8px 14px', textDecoration:'none', whiteSpace:'nowrap'}}>Follow →</Link></li>
+<li><Link href="https://www.linkedin.com/in/jeremytan42/" style={{fontFamily:'DM Mono, monospace', fontSize:10, fontWeight:300, letterSpacing:'0.1em', textTransform:'uppercase', color:'rgba(232,52,42,1)', background:'transparent', border:'1.5px solid rgba(232,52,42,0.7)', borderRadius:'999px', padding:'8px 16px', textDecoration:'none', whiteSpace:'nowrap'}}>Follow →</Link></li>
         </ul>
       </nav>
 
