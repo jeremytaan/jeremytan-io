@@ -21,7 +21,7 @@ export default function About() {
           <li className="nav-link-item"><Link href="/#projects" style={{ fontFamily: 'DM Mono, monospace', fontSize: 11, fontWeight: 300, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7A7268', textDecoration: 'none' }}>Projects</Link></li>
           <li className="nav-link-item"><Link href="/#work" style={{ fontFamily: 'DM Mono, monospace', fontSize: 11, fontWeight: 300, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7A7268', textDecoration: 'none' }}>Work</Link></li>
           <li className="nav-link-item"><Link href="/about" style={{ fontFamily: 'DM Mono, monospace', fontSize: 11, fontWeight: 300, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#E8342A', textDecoration: 'none' }}>About</Link></li>
-          <li><Link href="https://www.linkedin.com/in/jeremytan42/" style={{ fontFamily: 'DM Mono, monospace', fontSize: 10, fontWeight: 300, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#F0EDE8', background: '#E8342A', padding: '8px 14px', textDecoration: 'none', whiteSpace: 'nowrap' }}>Follow →</Link></li>
+          <li><Link href="https://www.linkedin.com/in/jeremytan42/" style={{ fontFamily: 'DM Mono, monospace', fontSize: 10, fontWeight: 300, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(232,52,42,1)', background: 'transparent', border: '1.5px solid rgba(232,52,42,0.7)', borderRadius: '999px', padding: '8px 16px', textDecoration: 'none', whiteSpace: 'nowrap' }}>Follow →</Link></li>
         </ul>
       </nav>
 
@@ -120,8 +120,8 @@ export default function About() {
             <p style={{ fontFamily: 'DM Mono, monospace', fontSize: 11, color: '#7A7268', letterSpacing: '0.08em' }}>Designer. Founder. Misfit. Open to collabs.</p>
           </div>
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
-            <a href="mailto:jeremy.tan1@outlook.com" style={{ fontFamily: 'DM Mono, monospace', fontSize: 10, fontWeight: 300, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#F0EDE8', background: '#E8342A', padding: '12px 20px', textDecoration: 'none' }}>Get in touch →</a>
-            <Link href="/#work" style={{ fontFamily: 'DM Mono, monospace', fontSize: 10, fontWeight: 300, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7A7268', border: '1px solid #2C2825', padding: '12px 20px', textDecoration: 'none' }}>View work →</Link>
+            <a href="mailto:jeremy.tan1@outlook.com" style={{ fontFamily: 'DM Mono, monospace', fontSize: 10, fontWeight: 300, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(232,52,42,1)', background: 'transparent', border: '1.5px solid rgba(232,52,42,0.7)', borderRadius: '999px', padding: '12px 20px', textDecoration: 'none' }}>Get in touch →</a>
+            <Link href="/#work" style={{ fontFamily: 'DM Mono, monospace', fontSize: 10, fontWeight: 300, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#F0EDE8', border: '1px solid rgba(240,237,232,0.3)', borderRadius: '999px', padding: '12px 20px', textDecoration: 'none' }}>View work →</Link>
           </div>
         </div>
       </section>
