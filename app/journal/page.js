@@ -37,7 +37,7 @@ export default function JournalPage() {
               <p style={{ fontFamily: 'DM Mono, monospace', fontSize: '11px', color: '#666', marginBottom: '12px' }}>{post.slug}</p>
               <h2 style={{ fontSize: '18px', fontWeight: '500', color: '#F0EDE8', marginBottom: '12px' }}>{post.title}</h2>
               {post.tag && <span style={{ fontFamily: 'DM Mono, monospace', fontSize: '10px', color: '#E8342A', border: '1px solid #E8342A', padding: '3px 8px', letterSpacing: '0.08em' }}>{post.tag}</span>}
-<p style={{ fontFamily: 'DM Mono, monospace', fontSize: '11px', color: '#666', marginTop: '16px' }}>{post.date}</p>
+<p style={{ fontFamily: 'DM Mono, monospace', fontSize: '11px', color: '#666', marginTop: '16px' }}>{new Date(post.date + 'T00:00:00').toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
             </Link>
             <hr style={{ border: 'none', borderTop: '1px solid #2C2C2C' }} />
           </div>
